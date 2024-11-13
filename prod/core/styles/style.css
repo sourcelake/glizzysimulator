@@ -1,0 +1,32 @@
+body {
+    font-family: VCR;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+#points {
+    position: absolute;
+    top: 0%;
+}
+
+.glizzyspace {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.glizzy {
+    z-index: 2;
+}
+
+
+@font-face {
+    font-family: VCR;
+    src: url(../resources/fonts/VCR.ttf);
+}
