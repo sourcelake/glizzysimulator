@@ -3,6 +3,7 @@ var points = $("#points")
 
 
 var counter = 0;
+var qnumber = 0;
 
 const url = "https://api.jsonsilo.com/57dbb126-3065-476b-bd0c-b860abe2a69d";
 const headers = {
@@ -72,6 +73,8 @@ document.addEventListener("mousedown", () => {
     points.html("points: "+counter)
     console.log(counter); 
     if (counter % config["splashFrequency"] == 0) {
+        qnumber++;
+        $("#title").html("Extreme Algebra | Question " + qnumber)
         let splash = getRandSplash(config["splashes"]);
         console.log( splash )
         createSplash( randint(window.innerWidth-config["edgeWidth"]), randint(window.innerHeight-config["edgeHeight"]), splash )
